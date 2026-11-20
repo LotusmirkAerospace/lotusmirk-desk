@@ -9,6 +9,9 @@ const MODE_OPTIONS = [
   { value: 'on-path', label: 'Program is on PATH' },
 ];
 
+const RECONNECT_ATTEMPT_MS = 5_000;
+const RECONNECT_POLL_MS = 100;
+
 function basename(executable: string): string {
   const parts = executable.split(/[\\/]/);
   return parts[parts.length - 1] || executable;
@@ -81,7 +84,8 @@ async function inspect(record: ConnectionRecord, ctx: AdapterContext): Promise<H
 export const processConnectionAdapter: ConnectionAdapter = {
   id: 'process',
   label: 'Local process',
-  description: 'Check that a program is on PATH, or that its process is running. Reconnect starts it again.',
+  description:
+    'Check that a program is on PATH, or that its process is running. Reconnect starts it again and waits for it to appear.',
   implemented: true,
   fields: [
     {
@@ -119,13 +123,23 @@ export const processConnectionAdapter: ConnectionAdapter = {
   async reconnect(record, ctx) {
     const executable = assertExecutable(record.config.executable);
     const args = splitArgs(record.config.arguments ?? '');
+    const started = ctx.clock().getTime();
     try {
       await ctx.runner.spawnDetached(executable, args);
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Desk could not start the program.';
-      return report(ctx, ctx.clock().getTime(), 'error', message);
+      return report(ctx, started, 'error', message);
     }
-    await new Promise((resolve) => setTimeout(resolve, 400));
-    return inspect(record, ctx);
+    const deadline = Date.now() + RECONNECT_ATTEMPT_MS;
+    let view = await inspect(record, ctx);
+    while (view.status === 'unreachable' && Date.now() < deadline) {
+      await delay(RECONNECT_POLL_MS);
+      view = await inspect(record, ctx);
+    }
+    return view;
   },
 };
+
+function delay(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
