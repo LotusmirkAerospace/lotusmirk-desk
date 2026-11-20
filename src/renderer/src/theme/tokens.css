@@ -1,0 +1,32 @@
+/*
+  Desk theme tokens. Restyle the app by editing this file.
+  Screen components should use these variables and not hard-coded colors.
+*/
+:root {
+  --color-bg: #f3f3f1;
+  --color-surface: #ffffff;
+  --color-text: #1c1c1a;
+  --color-muted: #5e5e58;
+  --color-border: #d6d6d0;
+  --color-accent: #2f5d8c;
+  --color-accent-text: #ffffff;
+  --color-ok: #1f7a3a;
+  --color-ok-bg: #e5f4e9;
+  --color-warn: #8a5a00;
+  --color-warn-bg: #fbf1dc;
+  --color-bad: #a12626;
+  --color-bad-bg: #fdecec;
+  --color-info: #2f5d8c;
+  --color-info-bg: #e8f0f7;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --radius: 4px;
+  --font-sans: system-ui, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --font-size: 14px;
+  --line: 1.45;
+}
