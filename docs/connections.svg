@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#f3f3f1"/>
+  <rect x="0" y="0" width="960" height="56" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="24" y="34" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#1c1c1a">Desk</text>
+  <text x="78" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#5e5e58">local AI connectors</text>
+  <text x="620" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#2f5d8c">Connections</text>
+  <text x="740" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Repos</text>
+  <text x="810" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Settings</text>
+  <text x="32" y="100" font-family="system-ui, sans-serif" font-size="22" fill="#1c1c1a">Connections</text>
+  <text x="32" y="126" font-family="system-ui, sans-serif" font-size="14" fill="#5e5e58">One list of the local AI tools on this computer, and whether each one is up.</text>
+  <rect x="32" y="150" width="580" height="120" rx="4" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="48" y="182" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a">Desktop Commander</text>
+  <rect x="220" y="164" width="72" height="22" rx="4" fill="#e5f4e9"/>
+  <text x="232" y="180" font-family="system-ui, sans-serif" font-size="12" fill="#1f7a3a">healthy</text>
+  <text x="48" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#5e5e58">MCP server</text>
+  <text x="48" y="234" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Process is running.</text>
+  <rect x="32" y="286" width="580" height="120" rx="4" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="48" y="318" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a">Serena</text>
+  <rect x="130" y="300" width="96" height="22" rx="4" fill="#fbf1dc"/>
+  <text x="142" y="316" font-family="system-ui, sans-serif" font-size="12" fill="#8a5a00">unreachable</text>
+  <text x="48" y="346" font-family="system-ui, sans-serif" font-size="13" fill="#5e5e58">MCP server</text>
+  <text x="48" y="370" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Could not reach the endpoint.</text>
+  <rect x="640" y="150" width="288" height="280" rx="4" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="656" y="182" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a">Add a connection</text>
+  <text x="656" y="220" font-family="system-ui, sans-serif" font-size="13" fill="#5e5e58">Name, type, URL or command</text>
+  <rect x="656" y="360" width="150" height="32" rx="4" fill="#2f5d8c"/>
+  <text x="678" y="381" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff">Add and check</text>
+  <text x="32" y="520" font-family="system-ui, sans-serif" font-size="12" fill="#5e5e58">Skeleton UI. Visual design is replaced by editing the theme tokens.</text>
+</svg>
