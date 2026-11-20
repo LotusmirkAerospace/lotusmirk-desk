@@ -1,0 +1,32 @@
+appId: dev.desk.companion
+productName: Desk
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!tests/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.env,.env.*,.npmrc}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json,vitest.config.ts}'
+asar: true
+npmRebuild: false
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Utility
+  synopsis: Local companion for connection health and isolated package trials
+  executableName: desk
+mac:
+  target:
+    - dmg
+  category: public.app-category.developer-tools
+win:
+  target:
+    - nsis
+  executableName: desk
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  shortcutName: Desk
