@@ -1,0 +1,28 @@
+name: Bug report
+description: Something in Desk did not work as described.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what Desk did instead.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup
+      description: Operating system, Desk version, and whether this was `npm run dev` or a packaged build.
+      placeholder: Windows 11, Desk 0.1.0, installed from the NSIS setup
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log excerpt
+      description: Paste the relevant lines from the Desk log. Remove webhook URLs, tokens, and home-folder names first.
+    validations:
+      required: false
