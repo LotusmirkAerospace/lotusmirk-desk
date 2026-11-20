@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#f3f3f1"/>
+  <rect x="0" y="0" width="960" height="56" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="24" y="34" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#1c1c1a">Desk</text>
+  <text x="78" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#5e5e58">local AI connectors</text>
+  <text x="620" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Connections</text>
+  <text x="740" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Repos</text>
+  <text x="810" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#2f5d8c">Settings</text>
+  <text x="32" y="100" font-family="system-ui, sans-serif" font-size="22" fill="#1c1c1a">Settings</text>
+  <rect x="32" y="124" width="896" height="110" rx="4" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="48" y="154" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a">Appearance</text>
+  <text x="48" y="182" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">App name, accent colour, logo</text>
+  <text x="48" y="208" font-family="system-ui, sans-serif" font-size="13" fill="#5e5e58">Set on first run. Nothing here is tied to an account.</text>
+  <rect x="32" y="250" width="430" height="150" rx="4" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="48" y="280" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a">Markdown hub</text>
+  <text x="48" y="308" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Google Drive link or local folder</text>
+  <text x="48" y="336" font-family="ui-monospace, monospace" font-size="12" fill="#5e5e58">ai/DESK.md</text>
+  <text x="48" y="364" font-family="system-ui, sans-serif" font-size="13" fill="#5e5e58">Assistants read this to find the shared notes.</text>
+  <rect x="478" y="250" width="450" height="150" rx="4" fill="#ffffff" stroke="#d6d6d0"/>
+  <text x="494" y="280" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1c1c1a">Alerts</text>
+  <text x="494" y="308" font-family="system-ui, sans-serif" font-size="14" fill="#1c1c1a">Webhook URL and optional auth header</text>
+  <rect x="494" y="332" width="140" height="30" rx="4" fill="#2f5d8c"/>
+  <text x="512" y="352" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff">Send test alert</text>
+  <text x="32" y="520" font-family="system-ui, sans-serif" font-size="12" fill="#5e5e58">The header is stored in the OS keychain. Desk refuses to save it if the keychain is unavailable.</text>
+</svg>
